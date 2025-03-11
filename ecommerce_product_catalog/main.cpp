@@ -13,6 +13,16 @@ private:
 public:
     // Constructor to initialize product details
     Product(int id, string name, double price, int stock, string category) {
+        if (price < 0) {
+            cout << "Price cannot be less than 0!" << endl;
+            price = 0;
+        }
+        
+        if (stock < 0) {
+            cout << "Stock cannot be less than 0!" << endl;
+            stock = 0;
+        }
+
         this->id = id;
         this->name = name;
         this->price = price;
