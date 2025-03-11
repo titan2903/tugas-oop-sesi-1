@@ -87,9 +87,17 @@ int main() {
     account1.withdraw(100.0);  // Withdraw 100.0 from account1
     account1.transfer(account2, 150.0); // Transfer 150.0 from account1 to account2
 
+    cout << endl;
+    
     // Displaying the final balances of both accounts
     cout << "Account 1 balance: " << account1.getBalance() << endl;
     cout << "Account 2 balance: " << account2.getBalance() << endl;
+
+    cout << endl;
+
+    //  Displaying the get account number and holder name of both accounts
+    cout << "Account 1 number: " << account1.getAccountNumber() << ", holder: " << account1.getHolderName() << endl;
+    cout << "Account 2 number: " << account2.getAccountNumber() << ", holder: " << account2.getHolderName() << endl;
 
     return 0;
 }
