@@ -69,20 +69,35 @@ public:
 
 int main() {
     // Creating a product object using the constructor
-    Product product(1, "Laptop", 1000.0, 50, "Electronics");
+    Product laptop(1, "Laptop", 1000.0, 50, "Electronics");
+    Product phone(2, "Phone", 500.0, 100, "Electronics");
 
-    // Displaying product information
-    product.displayInfo();
+    // Displaying laptop product information
+    laptop.displayInfo();
 
     // Updating price and stock
-    product.updatePrice(950.0);
-    product.updateStock(45);
+    laptop.updatePrice(950.0);
+    laptop.updateStock(45);
 
     // Applying discount
-    product.applyDiscount(10);
+    laptop.applyDiscount(10);
 
-    // Displaying updated product information
-    product.displayInfo();
+    // Displaying updated laptop product information
+    laptop.displayInfo();
+    cout << endl;
+
+    // Displaying phone product information
+    phone.displayInfo();
+
+    // Updating price and stock
+    phone.updatePrice(450.0);
+    phone.updateStock(90);
+
+    // Applying discount
+    phone.applyDiscount(20);
+
+    // Displaying updated phone product information
+    phone.displayInfo();
 
     return 0;
 }
