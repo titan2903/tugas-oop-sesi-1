@@ -84,6 +84,7 @@ int main() {
 
     // Performing some operations on the first account
     account1.deposit(200.0);   // Deposit 200.0 into account1
+    account1.deposit(-50.0);   // Deposit -50.0 into account1 and show catch error message
     account1.withdraw(100.0);  // Withdraw 100.0 from account1
     account1.transfer(account2, 150.0); // Transfer 150.0 from account1 to account2
 
